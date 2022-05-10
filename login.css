@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-section {
+  width: 90%;
+  margin: 2em auto;
+  margin-bottom: 0;
+  background-color: white;
+}
+.login-section-header {
+  width: 100%;
+}
+.login-header {
+  display: flex;
+  /* list-style-position: outside; */
+  /* margin: 0 auto; */
+  align-items: center;
+  justify-content: center;
+}
+
+.login-header li {
+  list-style: none;
+  display: inline-block;
+}
+
+.login-header li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 300%;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.slash {
+  margin: 0;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 300%;
+}
+
+.register {
+  text-align: start;
+  opacity: 0.7;
+}
+#register {
+  /* display: none; */
+}
+.star {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 32%;
+  margin: 2em auto;
+  font-weight: bold;
+  font-size: smaller;
+}
+.input {
+  width: 384px;
+  padding: 8px;
+  border: solid 1px grey;
+}
+
+.input:focus {
+  background-color: beige;
+  outline: none;
+}
+.required {
+  color: red;
+}
+.password-input {
+  padding: 8px;
+  width: 384px;
+}
+
+.password-input:focus {
+  outline: none;
+  background-color: beige;
+}
+.login-show-password-eye {
+  display: inline;
+  cursor: pointer;
+  margin: -30px;
+}
+
+.login-btn {
+  width: 402px;
+  padding: 8px;
+  height: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.login-btn:hover {
+  color: gray;
+}
+
+.lost-password-link {
+  float: right;
+  text-decoration: none;
+  color: red;
+}
+.register-show-password-eye {
+  display: inline;
+  cursor: pointer;
+  margin: -30px;
+}
+label {
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+  .login-section {
+    font-size: smaller;
+  }
+  .login-header li a {
+    font-size: xx-large;
+  }
+  .width-for-small-screen {
+    width: 300px;
+  }
+  .form-footer {
+    width: 318px;
+  }
+  .login-btn {
+    width: 318px;
+  }
+}

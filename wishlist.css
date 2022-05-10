@@ -1,0 +1,11 @@
+.wishlist-text {
+  font-size: 86px;
+}
+.wishlist-icon i {
+  font-size: 128px;
+  text-align: center;
+}
+.wishlist-total {
+  text-align: center;
+  padding: 75px;
+}

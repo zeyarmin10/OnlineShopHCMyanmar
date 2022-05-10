@@ -1,0 +1,40 @@
+.suits h2 {
+  font-size: 64px;
+  text-align: center;
+}
+
+.items {
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.items-list {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.items-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.item-box {
+  width: 22%;
+  padding: 1em;
+}
+.item-box a {
+  font-size: 1em;
+}
+.items-price {
+  color: grey;
+  font-size: 1em;
+}
+.items-price:hover {
+  color: brown;
+}
+.item-box ul li a img {
+  width: 100%;
+}

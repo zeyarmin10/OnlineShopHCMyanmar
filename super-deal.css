@@ -1,0 +1,29 @@
+.super-deal h3 {
+  font-size: 64px;
+}
+.items-list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  order: 4;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.item-box {
+}
+.items-price {
+  color: grey;
+}
+.items-price:hover {
+  color: brown;
+}
+.item-box ul li a img {
+  width: 100%;
+}

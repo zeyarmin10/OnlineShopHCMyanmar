@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HC Online Sale</title>
+    <link rel="icon" href="images/hc_shops_logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="assets/css/all.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="header">
+          <div class="hc-site-logo">
+            <a href="index.html" class="hc-logo">
+              <img
+                src="images/hc_shops_logo.png"
+                alt="hc_shops_logos"
+                class="hc-logo"
+              />
+            </a>
+          </div>
+          <section class="nav-menu">
+            <nav class="nav-menu-bar">
+              <ul>
+                <li><a href="home.html" class="nav-menu-home">HOME</a></li>
+                <li>
+                  <a href="new-arrivals.html" class="nav-menu-new">
+                    NEW
+                    <span><i class="fa-solid fa-caret-down"></i></span>
+                  </a>
+                  <div class="hidden-nav-submenu hidden-nav-menu-new">
+                    <ul >
+                      <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                      <li><a href="new-campaign.html">NEW CAMPAIGN</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="polo-tee.html" class="nav-menu-products">PRODUCTS<span><i class="fa-solid fa-caret-down"></i></span></a>
+                  <div class="hidden-nav-submenu hidden-nav-menu-products">
+                    <ul>
+                      <li>TOPWEAR</li>
+                      <ul>
+                        <li><a href="polo-tee.html">POLO TEES</a></li>
+                        <!-- <li><a href="#">CORE TEES</a></li>
+                        <li><a href="#">LONG SLEEVE TEES</a></li> -->
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li>BLAZERS</li>
+                      <ul>
+                        <li><a href="suits.html">SUITS</a></li>
+                        <!-- <li><a href="#">COATS</a></li>
+                        <li><a href="#">VESTS</a></li> -->
+                      </ul>
+                    </ul>
+                    <ul>
+                      <li>PANTS</li>
+                      <ul>
+                        <li><a href="jeans-pants.html">JEANS PANTS</a></li>
+                        <!-- <li><a href="#">COTTON PANTS</a></li>
+                        <li><a href="#">LONG PANTS</a></li> -->
+                      </ul>
+                    </ul>  
+                  </div>
+                </li>
+                <li>
+                  <a href="outsider.html" class="nav-menu-collections"
+                    >COLLECTIONS<span
+                      ><i class="fa-solid fa-caret-down"></i></span
+                  ></a>
+                  <div class="hidden-nav-submenu hidden-nav-menu-collections">
+                    <ul>
+                      <li><a href="outsider.html">OUTSIDER</a></li>
+                      <li><a href="golden-era.html">GOLDEN ERA</a></li>
+                      <li><a href="bear.html">BEAR</a></li>
+                    </ul>  
+                  </div>
+                </li>
+                <li>
+                  <a href="login-page.html" class="nav-menu-info"
+                  >INFO<span><i class="fa-solid fa-caret-down"></i></span
+                ></a>
+                    <div class="hidden-nav-submenu hidden-nav-menu-info">
+                    <ul>
+                      <li><a href="login-page.html">MY ACCOUNT</a></li>
+                      <li><a href="shipping.html">SHIPPING</a></li>
+                      <!-- <li><a href="#">CONTACT US</a></li> -->
+                    </ul>  
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="tools">
+              <ul>
+                <li>
+                  <a href="wishlist.html" class="tools-button">
+                    <span class="tools_button_icon">
+                      <i class="fa-solid fa-heart"></i>
+                    </span>
+                    <span class="wishlist_items_number">0</span>
+                  </a>
+                </li>
+                <li class="shopping-cart-icon">
+                  <a href="#" class="tools-button">
+                    <span class="shopping_cart_button">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </span>
+                    <span class="shopping_cart_items_number">0</span>
+                  </a>
+                  <div class="shopping-mini-cart open">
+                    <div>
+                      <i class="fa-solid fa-cart-plus shopping-cart"></i>
+                      <p>No product in the cart</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="tools_button" href="login-page.html">
+                    <span class="tools_button_icon">
+                      <i class="fa-solid fa-user"></i>
+                    </span>
+                  </a>
+                </li>
+                <li ">
+                  <a href="#" class="tools_button button-magnifying-glass">
+                    <span class="tools_button_icon">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="menu-bar">
+                  <a href="#" class="menu-bar-icon"><span class="tools_button_icon"><i class="fa-solid fa-bars"></i></span></a>
+                </li>
+                <!-- <li>
+                  <span>
+                    <i class="fa-solid fa-xmark"></i>
+                  </span>
+                </li> -->
+              </ul>
+            </div>
+          </section>
+        </div>
+      </header>
+      <!--Show Hide Mobile Menu-->
+      <div class="hidden-mobile-menu">
+        <div class="mobile-menu-xmark-space">
+          <button class="mobile-menu-xmark"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="home.html" class="nav-menu-home">HOME</a></li>
+            <li>
+              <a href="new-arrivals.html" class="nav-menu-new">
+                NEW
+                <span><i class="fa-solid fa-caret-down"></i></span>
+              </a>
+              <div class="hidden-nav-submenu hidden-nav-menu-new">
+                <ul >
+                  <li><a href="new-arrivals.html">NEW ARRIVALS</a></li>
+                  <li><a href="new-campaign.html">NEW CAMPAIGN</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="polo-tee.html" class="nav-menu-products">PRODUCTS<span><i class="fa-solid fa-caret-down"></i></span></a>
+              <div class="hidden-nav-submenu hidden-nav-menu-products">
+                <ul>
+                  <li>TOPWEAR</li>
+                  <ul>
+                    <li><a href="polo-tee.html">POLO TEES</a></li>
+                    <!-- <li><a href="#">CORE TEES</a></li>
+                    <li><a href="#">LONG SLEEVE TEES</a></li> -->
+                  </ul>
+                </ul>
+                <ul>
+                  <li>BLAZERS</li>
+                  <ul>
+                    <li><a href="suits.html">SUITS</a></li>
+                    <!-- <li><a href="#">COATS</a></li>
+                    <li><a href="#">VESTS</a></li> -->
+                  </ul>
+                </ul>
+                <ul>
+                  <li>PANTS</li>
+                  <ul>
+                    <li><a href="jeans-pants.html">JEANS PANTS</a></li>
+                    <!-- <li><a href="#">COTTON PANTS</a></li>
+                    <li><a href="#">LONG PANTS</a></li> -->
+                  </ul>
+                </ul>  
+              </div>
+            </li>
+            <li>
+              <a href="outsider.html" class="nav-menu-collections"
+                >COLLECTIONS<span
+                  ><i class="fa-solid fa-caret-down"></i></span
+              ></a>
+              <div class="hidden-nav-submenu hidden-nav-menu-collections">
+                <ul>
+                  <li><a href="outsider.html">OUTSIDER</a></li>
+                  <li><a href="golden-era.html">GOLDEN ERA</a></li>
+                  <li><a href="bear.html">BEAR</a></li>
+                </ul>  
+              </div>
+            </li>
+            <li>
+              <a href="login-page.html" class="nav-menu-info"
+                >INFO<span><i class="fa-solid fa-caret-down"></i></span
+              ></a>
+              <div class="hidden-nav-submenu hidden-nav-menu-info">
+                <ul>
+                  <li><a href="login-page.html">MY ACCOUNT</a></li>
+                  <li><a href="shipping.html">SHIPPING</a></li>
+                  <!-- <li><a href="#">CONTACT US</a></li> -->
+                </ul>  
+              </div>
+            </li>
+          </ul>
+    </div>  
+      </div>
+      <div class="hidden-mobile-menu-overlay"></div>
+      <!--End of Mobile Menu-->
+      <!--Show/hide search box-->
+      <div class="hidden-search-box">
+        <div class="search-box open-search-box">
+          <div class="x-mark">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="looking-for">
+            <p>
+              WHAT ARE YOU LOOKING FOR?
+            </p>
+          </div>  
+          <div class="search-box-input">
+            <input type="text" name="search" id="search" class="search" placeholder="Search Products...">
+            <button id="search-button" class="search-button">
+              <i class="fa-solid fa-magnifying-glass search-button-font"></i>
+            </button>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <!--End Show Hide search box-->
+      <!--Image Slider-->
+      <div class="image-slider">
+        <div class="img-slider-1 fade" id="slider-1">
+          <img
+            src="images/Summer-Sale-Website-Slider-03-1536x768.jpg"
+            alt="Summer-Sale-Website-Slider"
+          />
+        </div>
+        <div class="img-slider-2 fade" id="slider-2">
+          <img
+            src="images/Website-Slider-2022-February-04-1536x768.jpg"
+            alt="Website-Slider-2022-February"
+          />
+        </div>
+        <div class="img-slider-3 fade" id="slider-3">
+          <img
+            src="images/Website-Slider-2022-February-05-1536x768.jpg"
+            alt="Website-Slider-2022-February"
+          />
+        </div>
+        <div class="img-slider-4 fade" id="slider-4">
+          <img
+            src="images/Website-Slider-2022-February-06-1536x768.jpg"
+            alt="Website-Slider-2022-February-06"
+          />
+        </div>
+        <div class="img-slider-5 fade" id="slider-5">
+          <img
+            src="images/Website-Silder-2022-March-04-1-1536x768.jpg"
+            alt=""
+          />
+        </div>
+        <div class="img-slider-6 fade" id="slider-6">
+          <img
+            src="images/Website-Silder-2022-April-01-1536x768.jpg"
+            alt=""  
+          />
+        </div>
+        <button id="left-button">
+          <span><i class="fa-solid fa-chevron-left btn-font"></i></span>
+        </button>
+        <button id="right-button">
+          <span><i class="fa-solid fa-chevron-right btn-font"></i></span>
+        </button>
+        <div class="btn-section">
+          
+        </div>
+      </div>
+      <section class="items">
+        <div class="new-arrival-items ">
+          <div>
+            <h1>NEW ARRIVALS</h1>
+          </div>
+          <div class="items-list">
+            <div class="item-box">
+              <ul>
+                <li>
+                  <a href="NewArrivals.html">
+                    <img src="images/LPANT-136_KHAKI_01.webp" alt="" />
+                    <span class="span-new">NEW</span>
+                  </a>
+                  <p>
+                    <a href="#">
+                      LOOSE-FIT ELASTIC WAISTBAND PATCH POCKETS CROPPED PANT –
+                      136 | Khaki
+                    </a>
+                    <p>
+                      <span class="items-price">MMK 48,000</span>
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="item-box">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="images/LPANT-136_Army_01.webp" alt="" />
+                    <span class="span-new">NEW</span>
+                  </a>
+                  <p>
+                    <a href="#">
+                      LOOSE-FIT ELASTIC WAISTBAND PATCH POCKETS CROPPED PANT –
+                      136 | Army 
+                    </a>
+                    <p>
+                      <span class="items-price">MMK 48,000</span>
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="item-box">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="images/LJNS-89_LBLUE_01.jpg" alt="" />
+                    <span class="span-new">NEW</span>
+                  </a>
+                  <p>
+                    <a href="#">
+                      SLIM-FIT DISTRESSED DENIM JEANS – 89 | Light Blue
+                    </a>
+                    <p>
+                      <span class="items-price">MMK 58,000</span>
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="item-box">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="images/SPANT-102_BLACK_01.jpg" alt="" />
+                    <span class="span-new">NEW</span>
+                  </a>
+                  <p>
+                    <a href="#"
+                      >LOOSE-FIT CARGO SHORT PANT – 102 | Black
+                    </a>
+                    <p>
+                      <span class="items-price">MMK 45,000</span>
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="see-more">
+            <a href="new-arrivals.html">SEE MORE</a>
+          </div>
+        </div> <!-- End of New Arrival Items-->
+        <div class="super-deal-items ">
+          <div>
+            <h3>SUPER DEAL 20% OFF</h3>
+          </div>
+          <div class="items-list">
+            <div class="item-box">
+              <ul>
+                <li>
+                  <div>
+                    <a href="#">
+                      <img src="images/RN-806MABDARIN-ORANGE-01.jpg" alt="">
+                    </a>
+                  </div>
+                  <p>
+                    <a href="#">
+                      High Cultured Core Tee – 806 | Mandrin Orange
+                    </a>
+                    <p>
+                      <del class="items-price">MMK 21,000</del>
+                      <span class="items-price">MMK 16,800</span>
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="item-box">
+              <ul>
+                <li>
+                  <div>
+                    <a href="#">
+                      <img src="images/RN-806SODA-BLUE01.jpg" alt="">
+                    </a>
+                  </div>
+                  <p>
+                    <a href="#">
+                      High Cultured Core Tee – 806 | Soda Blue
+                    </a>
+                    <p>
+                      <del class="items-price">MMK 21,000</del>
+                      <span class="items-price">MMK 16,800</span>  
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="item-box">
+              <ul>
+                <li>
+                  <div>
+                    <a href="#">
+                      <img src="images/1644210952_RN-806_SAND_01-920x920.jpg" alt="">
+                    </a>
+                  </div>
+                  <p>
+                    <a href="#">High Cultured Core Tee – 806 | Sand</a>
+                    <p>
+                      <del class="items-price">MMK 21,000</del>
+                      <span class="items-price">MMK 16,800</span>  
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="item-box">
+              <ul>
+                <li>
+                  <div>
+                    <a href="#">
+                      <img src="images/SWT-219_BLACK_01.jpg" alt="">
+                    </a>
+                  </div>
+                  <p>
+                    <a href="#">SUPER73 HYPEBEAR SWEATER – 219 | Black</a>
+                    <p>
+                      <del class="items-price">MMK 21,000</del>
+                      <span class="items-price">MMK 16,800</span>  
+                    </p>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="see-more">
+            <a href="super-deal.html">SEE ALL SUPER DEAL ITEMS</a>
+          </div>
+        </div><!-- End of Super Deal Items-->
+      </section>  
+      <footer>
+        <div class="site-footer-widget-area">
+          <div>
+            <ul class="follow list-font">
+              <li>FOLLOW US ON</li>
+              <ul class="follow-facebook-instagram">
+                <li>
+                  <a href="https://www.facebook.com/highculturedmm" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/highculturedmm_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <div>
+            <ul class="about list-font">
+              <li>ABOUT US</li>
+              <li><a href="#">STROE LOCATION</a></li>
+              <li><a href="#">CUSTOMER CARE</a></li>
+              <li><a href="#">CAMPANY PROFILE</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="info list-font">
+              <li>INFO</li>
+              <li><a href="login-page.html">MY ACCOUNT</a></li>
+              <li><a href="shipping.html">SHIPPING</a></li>
+              <li><a href="#">RETURN/EXCHANGE POLICY</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="download list-font">
+              <li>DOWNLOAD ON</li>
+              <li>
+                <ul class="download-apps">
+                  <li>
+                    <a
+                    href="https://play.google.com/store/apps/details?id=webviewgold.highcultured"
+                    target="_blank"><i class="fa-brands fa-google-play"></i
+                  ></a>  
+                  </li>
+                  <li>                
+                    <a href="https://apps.apple.com/us/app/high-cultured/id1604717537"target="_blank">
+                      <i class="fa-brands fa-app-store-ios"></i>
+                      <!-- <i class="fa-brands fa-app-store-ios"></i> -->
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--site footer widget area-->
+        <div class="site-footer-copyright-area">
+          <!-- <div class="fa-ig">
+            <ul class="facebook-instagram">
+              <li>
+                <a href="https://www.facebook.com/highculturedmm" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/highculturedmm_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>  
+          </div> -->
+          <div>
+            <h4 class="powered-by">Powered by <span><a href="#">HIGHCULTURED MYANMAR</a></span></h4>
+          </div>
+        </div>
+        <!--site footer copyright area-->
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
