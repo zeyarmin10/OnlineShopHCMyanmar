@@ -15,12 +15,12 @@ header {
   width: 100%;
 }
 .hc-site-logo {
-  max-height: 50px;
+  max-height: 30px;
   padding-top: 0.8em;
   padding-left: 2em;
 }
 .hc-logo {
-  width: auto;
+  width: 100%;
 }
 .hc-logo img {
   vertical-align: middle;
@@ -38,7 +38,17 @@ header {
   position: relative;
   width: 100%;
 }
+.nav-menu-bar ul {
+  margin: 0;
+}
 .menu-off {
+  display: none;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.hc-logo-mobile {
   display: none;
 }
 .hidden-nav-menu-new,
@@ -490,8 +500,8 @@ footer {
   }
   .nav-menu {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
   }
   .hidden-mobile-menu {
     background-color: aliceblue;
@@ -665,13 +675,27 @@ footer {
     padding: 0 1em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 576px) {
+  .hc-logo-mobile {
+    display: block;
+  }
+  .hc-logo-mobile li {
+    padding: 0 0 0 0.5rem;
+  }
   .tools {
-    width: 100%;
+    width: 80%;
     padding-right: 0.5em;
   }
+  .tools ul {
+    margin: 1rem 0;
+    text-align: start;
+  }
   .tools ul li {
-    padding: 0.3em;
+    padding: 0.5rem;
+  }
+  .tools ul li a img {
+    margin: 0;
+    width: 50px;
   }
   #left-button {
     position: absolute;
